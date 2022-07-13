@@ -1,0 +1,424 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+p{
+    color: #000;
+}
+
+.datosduros{
+    font-family: 'Libre Baskerville', serif;
+}
+
+.titulosec{
+    font-size: 35px !important;
+}
+
+/* HEADER */
+
+nav {
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #19B8BF;
+    color: #fff;
+    transition: .5s;
+}
+
+.checkBtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    nav ul li a{
+        font-size: 16px;
+    }
+} 
+
+@media (max-width: 850px){
+    .checkBtn {
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        color: #000;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .2s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a{
+        font-size: 20px;
+    }
+
+    li a:hover{
+        background-color: none;
+        color: #fff;
+        background-color: #19B8BF;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+.closer{
+    left: -100% !important;
+}
+
+/* BANNER */
+.banner{
+    height: 600px;
+    width: 100%;
+    background-image: url('images/boda-1.jpg');
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo{
+    color: rgb(0, 0, 0);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+#cuenta{
+    display: flex;
+    justify-content: center;
+}
+
+.simply-section{
+    background-color: #fff;
+    color: #000;
+    width: 180px;
+    height: 120px;
+    margin: 0 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.simply-amount{
+    display: block;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.simply-word{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+@media (max-width: 780px){
+
+    .titulo{
+        background-color: transparent;
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+
+    .simply-section{
+        width: auto;
+        background-color: transparent;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .simply-amount{
+        font-size: 40px;
+    }
+
+    .simply-word{
+        font-size: 20px;
+    }
+}
+
+/* DONDE */
+.lugar {
+    scroll-margin-top: 100px;
+    text-align: center;
+}
+
+.lugar p{
+    font-size: 15px;
+}
+
+.dondeCuando {
+    margin: 15px 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+.salon {
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(224, 220, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.salon a {
+    margin-top: 15px;
+    color: #000;
+    background-color: #fff;
+    padding: 7px 12px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.salon h3{
+    font-size: 20px !important;
+    color: #000;
+}
+
+.info {
+    margin-top: 10px;
+}
+
+.info p {
+    margin-top: 2px;
+}
+
+.carousel{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+.carousel-item img{
+    /* height: 500px; */
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cardatos{
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .salon {
+        width: 90%;
+    }
+
+    .carousel{
+        width: 100%;
+        height: 300px;
+    }
+
+    .carousel-item img{
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+/* LINKREGALO */
+.regalo{
+    scroll-margin-top: 100px;
+    text-align: center;
+}
+
+.linkcbu {
+    margin: 15px 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.collapsible{
+    max-width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.collapsible input{
+    display: none;
+}
+
+.collapsible label {
+    width: 300px;
+    position: relative;
+    font-weight: 600;
+    background-color: #eee;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+    color: #000;
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 15px 10px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.collapsible-text{
+    max-height: 1px;
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    text-align: start;
+    border: 1px solid #000;
+    padding-top: 15px;
+}
+
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 300px;
+    padding-bottom: 25px;
+    background-color: #fff;
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.1), 0 4px 11px 0 rgba(0, 0, 0, 0.08);
+    opacity: 1;
+    top: 0;
+}
+
+.collapsible-text h2{
+    margin-bottom: 10px;
+    padding: 15px 15px 0;
+    color: blue;
+}
+
+.collapsible-text p{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+/* ASISTENCIA */
+.asistencia{
+    scroll-margin-top: 100px;
+    margin: 25px 10px;
+    text-align: center;
+}
+
+.asistencia a{
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+/* .asistencia .datosduros{
+    font-family: 'Shadows Into Light', cursive;
+} */
+
+/* CARRUSEL */
+
+
+/* INFOEXTRA */
+.infoextra{
+    scroll-margin-top: 100px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.informacion{
+    margin: 15px 0;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+.ropa{
+    margin: 20px 0;
+}
+
+.ropa img{
+    width: 100px;
+    height: 100px;
+}
+
+.ropa p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 3px;
+}
+
+/* INSTAWALL */
+.instawall{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* FIRMA */
+.firma{
+    text-align: center;
+    font-size: 11px;
+    padding-top: 7px;
+    border-top: 1px solid #000;
+}
